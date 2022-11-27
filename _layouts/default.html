@@ -8,6 +8,9 @@
     <div class="page-wrap">
         {% include header.html %}
         <main>
+            <!-- list of filtered posts -->
+            <ul id="results-container"></ul>
+
             {{ content }}
         </main>
     </div>
@@ -17,6 +20,17 @@
     <script src="/assets/js/vendor/jquery.min.js"></script>
     <script src="/assets/js/vendor/semantic.min.js"></script>
     <script type="/assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/simple-jekyll-search.min.js"></script>
+    <script type="text/javascript">
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/search.json',
+          searchResultTemplate:
+            '<li><a href="{{ site.url }}{url}">{title}</a><br>{desc}</li>'
+          /* fuzzy: true */
+        })
+    </script>
 </body>
 
 </html>
