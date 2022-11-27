@@ -3,12 +3,16 @@
     <div class="ui items">
         <div class="item">
             <a class="ui circular tiny image">
-                <img src="/assets/img/profile.jpg">
+                <img onerror="this.src='/assets/img/default_profile.png'" src={{page.img_url}}>
             </a>
             <div class="content">
-                <a class="header">Abhishek Nagekar</a>
+                <!-- Post author -->
+                <a class="header">{{page.author}}</a>
                 <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>{{page.author_desc}}</p>
+                    {% if page.email %}
+                        <a href="https://www.google.com">{{page.email}}<a/>
+                    {% endif%}
                 </div>
             </div>
         </div>
