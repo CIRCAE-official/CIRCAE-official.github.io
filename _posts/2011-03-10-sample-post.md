@@ -4,7 +4,11 @@ title: Sample Post
 author: Liam Dff
 author_desc: Hola soy Liam, soy ingeniero electrónico.
 img_url: "/assets/img/profile.jpg"
-email: user@example.com
+email: www.gmail.com
+twitter: www.twitter.com
+instagram: www.instagram.com
+facebook: www.facebook.com
+linkedin: www.linkedin.com
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2014-12-24
 tags: [sample post]
