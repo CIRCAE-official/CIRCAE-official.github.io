@@ -11,8 +11,30 @@
                 <div class="description">
                     <p>{{page.author_desc}}</p>
                     {% if page.email %}
-                        <a href="https://www.google.com">{{page.email}}<a/>
-                    {% endif%}
+                    <a class="item" href="https://{{page.email}}">
+                            <i class="mail link icon"></i>
+                    </a>
+                    {% endif %}
+                    {% if page.twitter %}
+                    <a class="item" href="https://{{page.twitter}}">
+                            <i class="twitter link icon"></i>
+                    </a>
+                    {% endif %}
+                    {% if page.instagram %}
+                    <a class="item" href="https://{{page.instagram}}">
+                            <i class="instagram link icon"></i>
+                    </a>
+                    {% endif %}
+                    {% if page.facebook %}
+                    <a class="item" href="https://{{page.facebook}}">
+                            <i class="facebook link icon"></i>
+                    </a>
+                    {% endif %}
+                    {% if page.linkedin %}
+                    <a class="item" href="https://{{page.linkedin}}">
+                            <i class="linkedin link icon"></i>
+                    </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
