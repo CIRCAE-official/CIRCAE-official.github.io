@@ -10,8 +10,13 @@
                 <a class="header">{{page.author}}</a>
                 <div class="description">
                     <p>{{page.author_desc}}</p>
-                    {% if page.email %}
-                    <a class="item" href="https://{{page.email}}">
+                    {% if page.github %}
+                    <a class="item" href="https://{{page.github}}">
+                            <i class="github link icon"></i>
+                    </a>
+                    {% endif %}
+                    {% if page.email %} 
+                    <a class="item" href="mailto:abc@example.com?subject = Feedback&body = Message">
                             <i class="mail link icon"></i>
                     </a>
                     {% endif %}

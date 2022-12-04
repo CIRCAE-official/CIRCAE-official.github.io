@@ -2,12 +2,25 @@
     #head-search {
         display: none;
     }
+    .site-logo {
+        height: 250px;
+    }
 }
 
 
 @media all and (max-width: 600px) {
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     .right.menu {
         display: none !important;
+    }
+
+    .right.menu.footer.links {
+        display: flex !important;
+        font-size: 0.8em;
     }
 
     header {
@@ -16,6 +29,7 @@
 
     .site-logo {
         max-width: 30%;
+        height: 200px;
     }
 
     main {
