@@ -3,7 +3,8 @@ layout: post
 title: Sample Post
 author: Liam Dff
 author_desc: Hola soy Liam, soy ingeniero electrónico.
-img_url: "/assets/img/profile.jpg"
+img_url: /assets/img/profile.jpg
+github: www.github.com/bulb-light
 email: www.gmail.com
 twitter: www.twitter.com
 instagram: www.instagram.com
