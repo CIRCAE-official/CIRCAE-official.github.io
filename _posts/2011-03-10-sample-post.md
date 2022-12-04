@@ -97,6 +97,15 @@ Non Pygments code example
         <p>This is great isn't it?</p>
     </div>
 
+Here we got some python code
+
+```python
+# This is a lon comment on purpose, just to demonstrate something
+class A:
+    def __init__(self, x):
+        self.x = x
+```
+
 ## Buttons
 
 Make any link standout more when applying the `.btn` class.
